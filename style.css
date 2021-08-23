@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+body {
+  text-align: center;
+  background-color: thistle;
+}
+
+.container {
+  border: solid 5px rgb(255, 255, 255);
+  width: 500px;
+  height: 50p0x;
+  margin: 10px auto;
+}
+
+/* .jumbo {
+  transition: all 1s;
+} */
+
+.thumbnail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.thumb {
+  width: 165px;
+  border: solid 3px white;
+  box-sizing: border-box;
+}
+
+.thumb:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.active {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 576px) {
+  /* .container {
+    width: 250px;
+    height: 250px;
+    
+  } */
+  .container {
+    width: 400px;
+  }
+
+  .jumbo {
+    width: 400px;
+    height: 400px;
+  }
+
+  /* .thumbnail {
+    justify-content: center;
+  } */
+
+  .thumb {
+    width: 133px;
+  }
+}
